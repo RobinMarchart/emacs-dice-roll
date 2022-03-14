@@ -1,0 +1,19 @@
+[package]
+name = "emacs-dice-roll"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[lib]
+name="dice_roll_impl"
+crate-type = ["cdylib"]
+
+[dependencies]
+dice-roll =">=0.1.1, ^0.1"
+emacs-native-async = ">=0.1.2, ^0.1"
+emacs = "^0.18"
+rand = "^0.8.5"
+rand_chacha = "^0.3.1"
+rand_xoshiro = "^0.6.0"
+anyhow = "1.0"
